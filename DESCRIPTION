@@ -1,7 +1,7 @@
-Package: metastrippr
+Package: excelstrippr
 Type: Package
 Title: Extracts Tabular Data From Excel Reports
-Version: 0.1.0
+Version: 0.0.8
 Authors@R: 
     person(given = "Christopher",
            family = "Burch",

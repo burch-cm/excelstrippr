@@ -1,15 +1,15 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# metastrippr
+# excelstrippr ![excelstrippr sticker](./man/img/sticker-small.png)
 
 <!-- badges: start -->
 
 <!-- badges: end -->
 
-The goal of metastrippr is to provide an easy way to remove the
-extraneous metadata and extract the useful tabular data from Excel-based
-reports.
+The goal of excelstrippr is to provide an easy way to remove the
+extraneous metadata, headers, summaries, etc., and extract the useful
+tabular data from Excel-based reports.
 
 ## The Problem
 
@@ -60,11 +60,11 @@ head(dat, 10)
 
 ## The Solution
 
-metastrippr will look for the start of a tabular data set in an Excel
+excelstrippr will look for the start of a tabular data set in an Excel
 file, ignoring titles, summaries, and other meta-data in the report.
 
 ``` r
-library(metastrippr)
+library(excelstrippr)
 dat_stripped <- strip_metadata("./man/example/example-report.xlsx")
 #> New names:
 #> * `` -> ...1
@@ -100,18 +100,18 @@ data frame object.
 
 ## Installation
 
-<!-- You can install the released version of metastrippr from [CRAN](https://CRAN.R-project.org) with: -->
+<!-- You can install the released version of excelstrippr from [CRAN](https://CRAN.R-project.org) with: -->
 
 <!-- ``` r -->
 
-<!-- install.packages("metastrippr") -->
+<!-- install.packages("excelstrippr") -->
 
 <!-- ``` -->
 
-The most recent version of metastrippr can be installed from
-[GitHub](https://github.com/burch-cm/metastrippr) with {devtools}:
+The most recent version of excelstrippr can be installed from
+[GitHub](https://github.com/burch-cm/excelstrippr) with {devtools}:
 
 ``` r
 install.packages("devtools")
-devtools::install_github("burch-cm/metastrippr")
+devtools::install_github("burch-cm/excelstrippr")
 ```

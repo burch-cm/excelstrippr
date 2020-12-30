@@ -10,10 +10,7 @@
 #' @export
 #'
 #' @examples
-#' df <- tribble(~V0,     ~v1,           ~v2,      ~v3,
-#'               "Report on values", NA,  NA,       NA,
-#'                NA,      "X",           "Y",      "Z",
-#'                NA, "1234.5",      "234.12", "3452.1")
+#' df <- readxl::read_excel("./man/example/example-report.xlsx")
 #' extract_data(df)
 extract_data <- function(.df, checkcol = NA, promote_colnames = TRUE) {
     # count the NA values in each column

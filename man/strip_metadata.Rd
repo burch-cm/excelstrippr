@@ -15,3 +15,6 @@ a data frame containing the tabular data from the report
 \description{
 Strip Report MetaData From Excel File
 }
+\examples{
+strip_metadata("./man/example/example-report")
+}
