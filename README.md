@@ -100,15 +100,16 @@ data frame object.
 
 ## Installation
 
-You can install the released version of metastrippr from
-[CRAN](https://CRAN.R-project.org) with:
+<!-- You can install the released version of metastrippr from [CRAN](https://CRAN.R-project.org) with: -->
 
-``` r
-install.packages("metastrippr")
-```
+<!-- ``` r -->
+
+<!-- install.packages("metastrippr") -->
+
+<!-- ``` -->
 
 The most recent version of metastrippr can be installed from
-[GitHub](https://github.com/burch-cm/metastrippr) with devtools:
+[GitHub](https://github.com/burch-cm/metastrippr) with {devtools}:
 
 ``` r
 install.packages("devtools")

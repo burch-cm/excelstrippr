@@ -1,12 +1,17 @@
 Package: metastrippr
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Extracts Tabular Data From Excel Reports
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Authors@R: 
+    person(given = "Christopher",
+           family = "Burch",
+           role = c("aut", "cre"),
+           email = "cmburch@cmburch.me",
+           comment = c(ORCID = "0000-0001-6934-3325"))
+Description: Removes metadata and summary formatting from Excel reports, so that 
+    data from those reports can more easily be loaded into R. Currently works with 
+    .xlsx and .xls format files.  
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Imports: 

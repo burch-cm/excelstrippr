@@ -3,3 +3,4 @@
 ^README\.Rmd$
 ^working$
 ^working/*$
+^LICENSE\.md$
