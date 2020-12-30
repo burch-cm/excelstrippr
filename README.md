@@ -106,3 +106,11 @@ You can install the released version of metastrippr from
 ``` r
 install.packages("metastrippr")
 ```
+
+The most recent version of metastrippr can be installed from
+[GitHub](https://github.com/burch-cm/metastrippr) with devtools:
+
+``` r
+install.packages("devtools")
+devtools::install_github("burch-cm/metastrippr")
+```
