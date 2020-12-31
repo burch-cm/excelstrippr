@@ -4,3 +4,5 @@
 ^working$
 ^working/*$
 ^LICENSE\.md$
+^\.travis\.yml$
+^cran-comments\.md$

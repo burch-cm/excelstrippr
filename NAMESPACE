@@ -3,3 +3,4 @@
 export(extract_data)
 export(promote_colnames)
 export(strip_metadata)
+export(strip_na_percent)

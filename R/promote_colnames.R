@@ -7,8 +7,7 @@
 #' @export
 #'
 #' @examples
-#' df <- data.frame(v1 = c("X", "123.45"),
-#'                  v2 = c("Y", "345.67))
+#' df <- data.frame(v1 = c("X", "123.45"), v2 = c("Y", "345.67"))
 #' promote_colnames(df)
 promote_colnames <- function(.df, rownum = 1) {
     .names <- .df[rownum, ]

@@ -4,7 +4,12 @@
 \alias{extract_data}
 \title{Extract Data From a Report}
 \usage{
-extract_data(.df, checkcol = NA, promote_colnames = TRUE)
+extract_data(
+  .df,
+  checkcol = NA,
+  promote_colnames = TRUE,
+  strip_na_greater_than = 0.2
+)
 }
 \arguments{
 \item{.df}{a data frame object.}
@@ -14,6 +19,8 @@ If not specified, extract_data will attempt to guess the appropriate column.}
 
 \item{promote_colnames}{logical. (optional). Should the first row be promoted
 to column names?}
+
+\item{strip_na_greater_than}{double between 0 - 1. Drops rows with greater than this percentage of missing values. Defaults to 0.2}
 }
 \value{
 a data frame object.
@@ -22,9 +29,9 @@ a data frame object.
 Extract Data From a Report
 }
 \examples{
-df <- tribble(~V0,     ~v1,           ~v2,      ~v3,
-              "Report on values", NA,  NA,       NA,
-               NA,      "X",           "Y",      "Z",
-               NA, "1234.5",      "234.12", "3452.1")
+\dontrun{
+df <- readxl::read_excel("man/example/example-report.xlsx")
 extract_data(df)
+}
+
 }

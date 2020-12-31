@@ -18,9 +18,6 @@ a data frame with the promoted row as column names
 Promote Row to Column Names
 }
 \examples{
-df <- dplyr::tribble(
-              ~v1,           ~v2,      ~v3,
-              "X",           "Y",      "Z",
-              "1234.5", "234.12", "3452.1")
+df <- data.frame(v1 = c("X", "123.45"), v2 = c("Y", "345.67"))
 promote_colnames(df)
 }

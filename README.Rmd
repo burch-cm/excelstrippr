@@ -16,6 +16,7 @@ knitr::opts_chunk$set(
 # excelstrippr    ![excelstrippr sticker](./man/img/sticker-small.png)
 
 <!-- badges: start -->
+[![Travis build status](https://travis-ci.com/burch-cm/metastrippr.svg?branch=master)](https://travis-ci.com/burch-cm/metastrippr)
 <!-- badges: end -->
 
 The goal of excelstrippr is to provide an easy way to remove the extraneous
