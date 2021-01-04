@@ -76,24 +76,13 @@ dat_stripped <- strip_metadata("./man/example/example-report.xlsx")
 #> * `` -> ...5
 #> * ...
 head(dat_stripped, 10)
-#> # A tibble: 10 x 24
-#>    Region LOB   CC    `Loc ID` `Fac Type` `JON/DPN` `Doc #` Type  Status
-#>    <chr>  <chr> <chr> <chr>    <chr>      <chr>     <chr>   <chr> <chr> 
-#>  1 Alask~ ATO   40022 APX      EQUIP      <NA>      2019/5~ Add ~ Appro~
-#>  2 Alask~ ATO   40046 APX      EQUIP      <NA>      2019/5~ Add ~ Appro~
-#>  3 Alask~ ATO   40085 APX      EQUIP      <NA>      2019/5~ Add ~ Appro~
-#>  4 Alask~ ATO   40050 APX      ARTCC      <NA>      2019/5~ Add ~ Appro~
-#>  5 Alask~ ATO   40009 APX      ARTCC      <NA>      2019/5~ Add ~ Appro~
-#>  6 Alask~ ATO   40046 APX      ARTCC      <NA>      2019/5~ Add ~ Appro~
-#>  7 Alask~ ATO   40072 APX      ARTCC      <NA>      2019/5~ Add ~ Appro~
-#>  8 Alask~ ATO   40065 APX      ARTCC      <NA>      2019/5~ Add ~ Appro~
-#>  9 Alask~ ATO   40047 IDK      ARTCC      <NA>      2019/5~ Add ~ Appro~
-#> 10 Alask~ ATO   40095 IDK      ARTCC      <NA>      2019/5~ Add ~ Appro~
-#> # ... with 15 more variables: `Asset Type` <chr>, `Initiated By` <chr>,
-#> #   `Initiate Date` <chr>, Custodian <chr>, Barcode <chr>, `NSN/LSN` <chr>,
-#> #   Description <chr>, `Serial #` <chr>, `Delphi Asset #` <chr>, Cost <chr>,
-#> #   Qty <chr>, `Rejected By` <chr>, `Rej Reason` <chr>, `Rej Date` <chr>, `Test
-#> #   Equip` <chr>
+#> # A tibble: 0 x 24
+#> # ... with 24 variables: Region <chr>, LOB <chr>, CC <chr>, `Loc ID` <chr>,
+#> #   `Fac Type` <chr>, `JON/DPN` <chr>, `Doc #` <chr>, Type <chr>, Status <chr>,
+#> #   `Asset Type` <chr>, `Initiated By` <chr>, `Initiate Date` <chr>,
+#> #   Custodian <chr>, Barcode <chr>, `NSN/LSN` <chr>, Description <chr>, `Serial
+#> #   #` <chr>, `Delphi Asset #` <chr>, Cost <chr>, Qty <chr>, `Rejected
+#> #   By` <chr>, `Rej Reason` <chr>, `Rej Date` <chr>, `Test Equip` <chr>
 ```
 
 The extracted data can then be saved back into another file for future
@@ -102,13 +91,12 @@ data frame object.
 
 ## Installation
 
-<!-- You can install the released version of excelstrippr from [CRAN](https://CRAN.R-project.org) with: -->
+You can install the released version of excelstrippr from
+[CRAN](https://CRAN.R-project.org) with:
 
-<!-- ``` r -->
-
-<!-- install.packages("excelstrippr") -->
-
-<!-- ``` -->
+``` r
+install.packages("excelstrippr")
+```
 
 The most recent version of excelstrippr can be installed from
 [GitHub](https://github.com/burch-cm/excelstrippr) with {devtools}:

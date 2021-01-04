@@ -57,11 +57,11 @@ The extracted data can then be saved back into another file for future analysis 
 
 ## Installation
 
-<!-- You can install the released version of excelstrippr from [CRAN](https://CRAN.R-project.org) with: -->
+You can install the released version of excelstrippr from [CRAN](https://CRAN.R-project.org) with:
 
-<!-- ``` r -->
-<!-- install.packages("excelstrippr") -->
-<!-- ``` -->
+``` r
+install.packages("excelstrippr")
+```
 
 The most recent version of excelstrippr can be installed from [GitHub](https://github.com/burch-cm/excelstrippr) with {devtools}:  
 ``` r
