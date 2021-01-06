@@ -1,3 +1,6 @@
-# excelstrippr 0.1.1
+# excelstrippr 0.1.2
 
-* Added a `NEWS.md` file to track changes to the package.
+* accepted into CRAN  
+
+* changed default behavior of strip_metadata() to check if column names need 
+    promoting before actually promoting them  

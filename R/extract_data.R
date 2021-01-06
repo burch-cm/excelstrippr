@@ -15,7 +15,6 @@
 #' df <- readxl::read_excel("man/example/example-report.xlsx")
 #' extract_data(df)
 #' }
-#'
 extract_data <- function(.df,
                          checkcol = NA,
                          promote_colnames = TRUE,

@@ -33,5 +33,4 @@ Extract Data From a Report
 df <- readxl::read_excel("man/example/example-report.xlsx")
 extract_data(df)
 }
-
 }
