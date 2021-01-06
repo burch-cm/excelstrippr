@@ -6,7 +6,7 @@
 <!-- badges: start -->
 
 [![Travis build
-status](https://travis-ci.com/burch-cm/metastrippr.svg?branch=master)](https://travis-ci.com/burch-cm/metastrippr)
+status](https://travis-ci.com/burch-cm/excelstrippr.svg?branch=main)](https://travis-ci.com/burch-cm/excelstrippr)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/excelstrippr)](https://CRAN.R-project.org/package=excelstrippr)
 <!-- badges: end -->
