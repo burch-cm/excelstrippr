@@ -2,5 +2,7 @@
 
 * accepted into CRAN  
 
-* changed default behavior of strip_metadata() to check if column names need 
-    promoting before actually promoting them  
+## Bug Fixes  
+
+* (GitHub issue #1) changed default behavior of strip_metadata() to check if 
+    column names need promoting before actually promoting them  
