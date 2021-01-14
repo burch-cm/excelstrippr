@@ -5,11 +5,12 @@
 
 <!-- badges: start -->
 
-[![Travis build
-status](https://travis-ci.com/burch-cm/excelstrippr.svg?branch=main)](https://travis-ci.com/burch-cm/excelstrippr)
-[![](https://img.shields.io/badge/devel%20version-0.1.3-blue.svg)](https://github.com/excelstrippr)
+[![Travis Build
+Status](https://travis-ci.com/burch-cm/excelstrippr.svg?branch=main)](https://travis-ci.com/burch-cm/excelstrippr)
+[![GitHub
+Version](https://img.shields.io/badge/devel%20version-0.1.3-blue.svg)](https://github.com/excelstrippr)
 [![CRAN
-status](https://www.r-pkg.org/badges/version/excelstrippr)](https://CRAN.R-project.org/package=excelstrippr)
+Version](https://www.r-pkg.org/badges/version/excelstrippr)](https://CRAN.R-project.org/package=excelstrippr)
 <!-- badges: end -->
 
 The goal of excelstrippr is to provide an easy way to remove the
