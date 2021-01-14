@@ -5,6 +5,7 @@
 #'     If not specified, extract_data will attempt to guess the appropriate column.
 #' @param promote_colnames logical. Should the first row be promoted to column names?
 #' @param strip_na_greater_than double between 0 - 1. Drops rows with greater than this percentage of missing values. Defaults to 0.75, or 75 percent or greater missing values
+#' @param ... additional arguments to pass to extract_data
 #'
 #' @return a data frame object.
 #' @export
@@ -19,7 +20,7 @@
 extract_data <- function(.df,
                          checkcol = NA,
                          promote_colnames = TRUE,
-                         strip_na_greater_than = .75) {
+                         strip_na_greater_than = .75, ...) {
 
     # drop any columns with only NA values
     .df <- dplyr::select_if(.df, function(x) any(!is.na(x)))
@@ -48,7 +49,7 @@ extract_data <- function(.df,
 
     if (promote_colnames) {
         # promote row to columns names
-        .df <- promote_colnames(.df)
+        .df <- promote_colnames(.df, ...)
     }
     return(.df)
 }

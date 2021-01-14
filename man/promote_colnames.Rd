@@ -2,22 +2,26 @@
 % Please edit documentation in R/promote_colnames.R
 \name{promote_colnames}
 \alias{promote_colnames}
-\title{Promote Row to Column Names}
+\title{Promote Rows to Column Names}
 \usage{
-promote_colnames(.df, rownum = 1)
+promote_colnames(.df, header_start = 1, header_nrow = 1)
 }
 \arguments{
 \item{.df}{a data frame}
 
-\item{rownum}{numeric. The row in the data frame to be promoted to column names}
+\item{header_start}{numeric. The first row of the column headers to be promoted.}
+
+\item{header_nrow}{numeric. The number of rows the column headers span. Defaults to 1.}
 }
 \value{
 a data frame with the promoted row as column names
 }
 \description{
-Promote Row to Column Names
+Promote Rows to Column Names
 }
 \examples{
 df <- data.frame(v1 = c("X", "123.45"), v2 = c("Y", "345.67"))
 promote_colnames(df)
+df2 <- data.frame(v1 = c("X", "Value", "123.45"), v2 = c("Y", "Value", "345.67"))
+promote_colnames(df2, header_nrow = 2)
 }

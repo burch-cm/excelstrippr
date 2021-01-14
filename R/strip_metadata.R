@@ -14,7 +14,7 @@
 #' strip_metadata("my-excel-file.xlsx", sheet = "report summary")
 #' }
 strip_metadata <- function(from, promote = NA, ...) {
-    .df <- suppressMessages(readxl::read_excel(from, col_names = FALSE, ...))
+    .df <- suppressMessages(readxl::read_excel(from, col_names = FALSE))
     # check to see if column names need to be promoted
     if (is.na(promote)) {
         if (any(grepl("\\.\\.\\.[0-9]+", names(.df)))) {
@@ -23,6 +23,6 @@ strip_metadata <- function(from, promote = NA, ...) {
             promote = FALSE
         }
     }
-    .df <- extract_data(.df, promote_colnames = promote)
+    .df <- extract_data(.df, promote_colnames = promote, ...)
     return(.df)
 }

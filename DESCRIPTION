@@ -1,7 +1,7 @@
 Package: excelstrippr
 Type: Package
 Title: Extracts Tabular Data from Excel Reports
-Version: 0.1.2
+Version: 0.1.3
 Authors@R: 
     person(given = "Christopher",
            family = "Burch",

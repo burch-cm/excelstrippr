@@ -8,7 +8,8 @@ extract_data(
   .df,
   checkcol = NA,
   promote_colnames = TRUE,
-  strip_na_greater_than = 0.75
+  strip_na_greater_than = 0.75,
+  ...
 )
 }
 \arguments{
@@ -20,6 +21,8 @@ If not specified, extract_data will attempt to guess the appropriate column.}
 \item{promote_colnames}{logical. Should the first row be promoted to column names?}
 
 \item{strip_na_greater_than}{double between 0 - 1. Drops rows with greater than this percentage of missing values. Defaults to 0.75, or 75 percent or greater missing values}
+
+\item{...}{additional arguments to pass to extract_data}
 }
 \value{
 a data frame object.
