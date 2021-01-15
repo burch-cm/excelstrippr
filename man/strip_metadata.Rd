@@ -4,7 +4,7 @@
 \alias{strip_metadata}
 \title{Strip Report MetaData From Excel File}
 \usage{
-strip_metadata(from, promote = NA, ...)
+strip_metadata(from, promote = NA, header_nrow = 1, ...)
 }
 \arguments{
 \item{from}{the file path to the excel report.}
@@ -12,7 +12,9 @@ strip_metadata(from, promote = NA, ...)
 \item{promote}{logical. Should first non-NA row be promoted to column names?
 Default tries to make a reasonable determination.}
 
-\item{...}{extra parameters to pass to the read_excel function}
+\item{header_nrow}{numeric. How many rows does the table header cover? Defaults to 1.}
+
+\item{...}{extra parameters to pass to the read_csv and read_excel functions}
 }
 \value{
 a data frame containing the tabular data from the report

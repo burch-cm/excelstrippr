@@ -11,6 +11,8 @@ Status](https://travis-ci.com/burch-cm/excelstrippr.svg?branch=main)](https://tr
 Version](https://img.shields.io/badge/devel%20version-0.1.3-blue.svg)](https://github.com/excelstrippr)
 [![CRAN
 Version](https://www.r-pkg.org/badges/version/excelstrippr)](https://CRAN.R-project.org/package=excelstrippr)
+[![Codecov test
+coverage](https://codecov.io/gh/burch-cm/excelstrippr/branch/master/graph/badge.svg)](https://codecov.io/gh/burch-cm/excelstrippr?branch=main)
 <!-- badges: end -->
 
 The goal of excelstrippr is to provide an easy way to remove the
@@ -116,6 +118,9 @@ head(dat_multiline, 6)
 #> #   Cost <chr>, Qty <chr>, `Rejected By` <chr>, `Rejected Reason` <chr>,
 #> #   `Rejected Date` <chr>, `Test Equipment` <chr>
 ```
+
+**strip\_metadata()** works with both Excel (.xls / .xlsx) and .csv
+files.
 
 The extracted data can then be saved back into another file for future
 analysis or can be immediately used in analysis pipeline as any other

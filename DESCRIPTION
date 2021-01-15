@@ -1,7 +1,7 @@
 Package: excelstrippr
 Type: Package
 Title: Extracts Tabular Data from Excel Reports
-Version: 0.1.3
+Version: 0.1.4
 Authors@R: 
     person(given = "Christopher",
            family = "Burch",
@@ -17,7 +17,9 @@ LazyData: true
 Imports: 
     tidyr,
     dplyr,
-    readxl
+    readxl,
+    readr
 RoxygenNote: 7.1.1
 Suggests: 
-    testthat
+    testthat,
+    covr
