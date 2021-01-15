@@ -10,7 +10,7 @@ Authors@R:
            comment = c(ORCID = "0000-0001-6934-3325"))
 Description: Removes metadata and summary formatting from Excel reports, so that 
     data from those reports can more easily be loaded into R. Currently works with 
-    .xlsx and .xls format files.  
+    .xlsx, .xls, and .csv format files.  
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
