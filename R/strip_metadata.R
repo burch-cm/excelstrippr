@@ -23,7 +23,7 @@ strip_metadata <- function(from, promote = NA, header_nrow = 1, ...) {
     } else if (grepl("*\\.xls[x]?$", from)) {
         .df <- suppressMessages(readxl::read_excel(from, col_names = FALSE), ...)
     } else {
-        stop("File must have the extansion .csv or .xls/.xlsx")
+        stop("File must have the extension .csv or .xls/.xlsx")
     }
 
     # check to see if column names need to be promoted
